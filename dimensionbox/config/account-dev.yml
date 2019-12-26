@@ -23,17 +23,9 @@ mybatis-plus:
     field-strategy: 1
     #驼峰下划线转换
     db-column-underline: true
-    #mp2.3+ 全局表前缀 mp_
-    #table-prefix: mp_
-    #刷新mapper 调试神器
-    #refresh-mapper: true
-    #数据库大写下划线转换
-    #capital-mode: true
     # Sequence序列接口实现类配置
     key-generator: com.baomidou.mybatisplus.incrementer.OracleKeyGenerator
   configuration:
     #配置返回数据库(column下划线命名&&返回java实体是驼峰命名)，自动匹配无需as（没开启这个，SQL需要写as： select user_id as userId） 
     map-underscore-to-camel-case: true
     cache-enabled: false
-    #配置JdbcTypeForNull, oracle数据库必须配置
-    jdbc-type-for-null: 'null' 
