@@ -43,6 +43,8 @@ mybatis-plus:
     field-strategy: 1
     key-generator: com.baomidou.mybatisplus.incrementer.OracleKeyGenerator
   configuration:
+    #控制台打印sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     #配置返回数据库(column下划线命名&&返回java实体是驼峰命名)，自动匹配无需as（没开启这个，SQL需要写as： select user_id as userId） 
     map-underscore-to-camel-case: true
     cache-enabled: false
