@@ -3,11 +3,6 @@ server:
 spring:
   application:
     name: image
-   datasource:
-    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
 eureka:
   instance:
     prefer-ip-address: true
@@ -21,19 +16,6 @@ fdfs:
     width: 60
     height: 60
   tracker-list[0]: 192.168.29.200:22122 # tracker地址
- 
-ailibaba:
-  durid:
-    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: root
-    password: root
-    maxActive: 20
-    maxWait: 10000
-    minIdle: 3
-    validationQuery: SELECT 'x'
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    borrowConnectionTimeout: 30000
     
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
