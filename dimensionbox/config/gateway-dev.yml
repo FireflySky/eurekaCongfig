@@ -15,4 +15,3 @@ eureka:
 zuul:
   routes:
     account: /account/**
-    img: /img/**
