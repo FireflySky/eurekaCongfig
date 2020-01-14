@@ -28,7 +28,7 @@ fdfs:
 
 ailibaba:
   durid:
-    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
     password: root
     maxActive: 20
