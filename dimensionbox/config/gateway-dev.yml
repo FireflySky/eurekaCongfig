@@ -4,7 +4,7 @@ spring:
   application:
     name: gateway
   datasource:
-    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/dimensionbox?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
