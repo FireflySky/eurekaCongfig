@@ -8,6 +8,10 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 20MB #单文件上传限制10MB -1为不限制大小 默认为1MB
+      max-request-size: 100MB #一次请求的上传限制 
 eureka:
   client:
     service-url:
